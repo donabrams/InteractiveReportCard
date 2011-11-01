@@ -45,6 +45,65 @@ section#courses {
   width: 879px; 
 }
 
+section#grade_log rect.test {
+	fill: #fdc041;
+}
+section#grade_log rect.project {
+	fill: #2590b0;
+}
+section#grade_log rect.homework {
+	fill: #9dc6da;
+}
+section#grade_log rect.participation {
+	fill: #015f85;
+}
+section#grade_log ol {
+	overflow: auto;
+	height: 300px;
+	width: 880px;
+}
+section#grade_log {
+	position: relative;
+}
+section#grade_log article footer {
+	display:none;
+}
+section#grade_log .tooltip {
+	position: absolute;
+	display: none;
+	height: 130px;
+	width: 150px;
+	float: left;
+	position: relative;
+}
+section#grade_log .tooltip article:before {
+	content: "";
+	border-color: transparent #c7c8ca transparent transparent;
+	border-width: 90px 20px 40px 0px;
+	border-style: solid;
+	position:relative;
+	width: 0px;
+	height: 0px;
+	left: -22px;
+	top: 0px;
+	float: left;
+	display: block;
+	margin-right: -20px;
+}
+section#grade_log .tooltip article {
+	height: 130px;
+	width: 150px;
+	border: 2px solid #c7c8ca;
+	box-shadow: 3px 5px 8px #888;
+	background-color: #fff;
+}
+section#grade_log .tooltip article > * {
+	margin-left: 8px;
+}
+section#grade_log .tooltip article meter {
+	display: none;
+}
+
 
 section#upcoming_milestones {
   height: 233px;
