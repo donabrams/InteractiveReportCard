@@ -1,0 +1,490 @@
+.clearfloat {
+  clear: both;
+  height: 0px;
+}
+body {
+  background-color: #fdfcde; /* tan for background */
+}
+body > header {
+  background-color: #fff; /* white used for banner and class */
+}
+body > header h1 {
+  color: #015f85; /* dark blue used for name, icons, headers and primary links */
+}
+body > header h2 {
+  color: #50a4c0; /* middling blue used for school name */
+}
+body > header h3 {
+  color: #f9bc2d; /* golden yellow for grade */
+}
+body > time {
+  color: #f9bc2d; /* golden yellow for date */
+}
+section#description {
+  background-color: #9dc6da; /* light blue used for description background */
+}
+section#class_info > p {
+  color: #939499; /* light gray used for section */
+}
+section#mentions > p {
+  color: #99c2d8; /* blue used for mentions */
+}
+/* middling blue for graph and dialog banner #288fb0 */
+/* gray for secondary links #999a9e */
+/* gray for ubiquitous lines #908f94 */
+/* yellow for extracurricular background #fdbe3b */
+/* border for milestones #9cc7da */
+section#upcoming_milestones > header {
+  color: #288bab;
+}
+
+section#courses {
+  background-color: #fff;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 879px; 
+}
+
+
+section#upcoming_milestones {
+  height: 233px;
+  width: 218px;
+  overflow: hidden;
+  float: left;
+  border: 6px solid #9cc7da;
+  margin-right: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  padding-top: 6px;
+}
+section#upcoming_milestones > header h1 {
+  color: #218aaa;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 900;
+}
+section#upcoming_milestones li {
+  color: #9bc4d6;
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-top: 5px;
+}
+section#upcoming_milestones li header,
+section#upcoming_milestones li header h2 {
+  display:inline;
+  color: #9bc4d6;
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-top: 5px;
+  padding-right: 1px;
+}
+section#upcoming_milestones li article {
+  background: url(dot.png) repeat-x left 14px;
+}
+section#upcoming_milestones li article header, 
+section#upcoming_milestones li article span {
+  background-color: white;
+}
+section#upcoming_milestones li article span {
+  float:right;
+  padding-left: 1px;
+}
+section#upcoming_milestones li article.important, 
+section#upcoming_milestones li article.important h2 {
+  font-weight: 900;
+}
+section#upcoming_milestones footer {
+  margin-top: 5px;
+}
+section#upcoming_milestones footer a {
+  color: #999a9f;
+  font-style: italic;
+  font-family: 'Amaranth', sans-serif;  
+  font-size: 12px;
+  text-decoration: none;  
+}
+section#upcoming_milestones footer a:before {
+	content: url(link_arrow_dark.gif);
+	margin-right: 2px;
+	height: 10px;
+	width: 10px;
+}
+
+
+
+
+section#parent_teacher_dialog {
+  height: 264px;
+  width: 610px;
+  float: left;
+  position: relative;
+  margin-bottom: 15px;
+  margin-right: -50px;
+}
+section#parent_teacher_dialog > header {
+  /* background-color: #288fb0; */
+  background-color: transparent;
+  text-align: right;
+  height: 32px;
+  position: relative;
+}
+/* triangle cutout in banner on left */
+section#parent_teacher_dialog > header:before {
+ content: "";
+ display: block;
+ bottom: -16px;
+ border: 16px solid #288fb0;
+ box-shadow: 0px 6px 10px #bbb;
+ z-index: -1;
+ left: 0px;
+ border-right-width: 16px;
+}
+/* around the corner drop shadow on right */
+section#parent_teacher_dialog > header:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #1a718d transparent transparent transparent;
+ bottom: -16px;
+ right: 0;
+ border-width: 16px 16px 0 0;
+}
+section#parent_teacher_dialog h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-right: 34px;
+  margin-top: -32px;
+  margin-left: 40px;
+}
+/* white triangle to cover up */
+section#parent_teacher_dialog h1:before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top:-4px;
+  display: block;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 20px 20px 20px 20px;
+}
+section#parent_teacher_dialog ol {
+  position: absolute;
+  left: 0;
+  top: 44px;
+  overflow:auto;
+  height: 212px;
+  width: 575px;
+}
+section#parent_teacher_dialog li.buffer {
+  height: 65px;
+}
+section#parent_teacher_dialog li article {
+  overflow: hidden;
+}
+section#parent_teacher_dialog li article aside {
+  height: 60px;
+  width: 50px;
+  text-align: left;
+  display: table-cell; 
+  vertical-align: top;
+  margin-right: -100px;
+  float:left;
+}
+section#parent_teacher_dialog li article header h2 {
+  color: #015f85;  
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 900;
+  margin-left: 45px;
+}
+section#parent_teacher_dialog li article p {
+  color: #777;
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-right: 20px;
+  text-align: justify;
+  margin-left: 45px;
+}
+section#parent_teacher_dialog li article footer {
+  color: #CCCCCC;
+  font-style: italic;
+  font-family: 'Amaranth', sans-serif;  
+  font-size: 12px;
+  margin-left: 45px;
+}
+section#parent_teacher_dialog li hr {
+  clear: both;
+  height: 2px;
+  color: #CCCCCC;
+  background-color: #CCCCCC;
+  border:0;
+  margin-left: 4px;
+  margin-right: 20px;
+}
+section#parent_teacher_dialog article.newComment {
+  text-align: right;
+  position:absolute;
+  bottom: 5;
+  width:559px;
+  height: 70px;
+  background: #fff;
+}
+section#parent_teacher_dialog article.newComment textarea {
+  margin-top: 5px;
+  border: 1px solid #BBB;
+  box-shadow: 0px 1px 5px #DDD;  
+  padding: 5px;
+  width: 542px;
+  font-style: italic;
+  font-family: 'Amaranth', sans-serif;  
+  font-size: 11px;
+  color: #BBB;
+  margin-right: 20px;
+}
+section#parent_teacher_dialog article.newComment button {
+  margin-right: 17px;
+  background-color: 9cc7da;
+  color: white;
+  border:0px;
+  text-transform: uppercase;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 900;
+}
+section#parent_teacher_dialog > hr {
+  position: absolute;
+  bottom:0px;
+  width: 575px;
+  margin: -1px;
+  margin-bottom: 1px;
+  height: 3px;
+  color: #908f94;
+  background-color: #908f94;
+  border:0;
+}
+section#parent_teacher_dialog ol::-webkit-scrollbar              {
+  width: 11px;
+  height: 11px;
+}
+section#parent_teacher_dialog ol::-webkit-scrollbar-button       {
+  background-color: #e9f2f7;
+  border:0px;
+}
+section#parent_teacher_dialog ol::-webkit-scrollbar-track        { /* 3 */ }
+section#parent_teacher_dialog ol::-webkit-scrollbar-track-piece  {
+  background-color: #e9f2f7;
+  border:0px;
+}
+section#parent_teacher_dialog ol::-webkit-scrollbar-thumb        { 
+  background-color: #81b7d1;
+}
+section#parent_teacher_dialog ol::-webkit-scrollbar-corner       { 
+  background-color: transparent;
+}
+section#parent_teacher_dialog ol::-webkit-resizer                { /* 7 */ }
+
+
+
+
+
+section#extracurricular {
+  background-color: #fdbe3b;
+  height: 240px;
+  width: 500px;
+  margin-right: 20px;
+  float:left;
+  clear:left;
+  margin-left: 60px;
+  position:relative;
+  margin-top: 20px;
+}
+section#extracurricular > header {
+  float:left;
+  width:200px;
+  -webkit-transform-origin: top left;
+  -webkit-transform: rotate(-90deg) translate(-220px, 0px);
+  margin-left: 10px;
+  position:absolute:
+  left:0;
+  top:0;
+}
+section#extracurricular > header h1 {
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 5px;
+  color: #fdfcde;
+}
+section#extracurricular ul {
+  position:absolute;
+  left:0;
+  top:0;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-left: 65px;
+  margin-right:17px;
+  overflow:auto;
+  height: 206px;
+  width: 420px;
+}
+section#extracurricular hr {
+  margin-top: -17px;
+  height: 3px;
+  color: #fdfcde;
+  background-color: #fdfcde;
+  position: absolute;
+  left: 65px;
+  top: 238px;
+  
+  width: 392px;
+  border: 0px;
+}
+section#extracurricular li h2 {
+  color: #015f85;  
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 900;
+}
+section#extracurricular li p {
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-right: 10px;
+  text-align: justify;
+}
+section#extracurricular li time {
+  color: #707070;
+  font-style: italic;
+  font-family: 'Amaranth', sans-serif;  
+  font-size: 12px;
+}
+section#extracurricular li aside {
+  float: left;
+  margin: 2px;
+  margin-right: 10px;
+}
+section#extracurricular li aside img {
+  width: 115px;
+  height: 85px;
+}
+section#extracurricular li hr {
+  margin-top: 10px;
+  height: 1px;
+  color: #fdfcde;
+  background-color: #fdfcde;  
+  width: 392px;
+  border: 0px;
+  position:static;
+  text-align:left;
+  margin-left: 0;
+}
+section#extracurricular ul::-webkit-scrollbar              {
+  width: 11px;
+  height: 11px;
+}
+section#extracurricular ul::-webkit-scrollbar-button       {
+  background-color: #e9f2f7;
+  border:0px;
+}
+section#extracurricular ul::-webkit-scrollbar-track        { /* 3 */ }
+section#extracurricular ul::-webkit-scrollbar-track-piece  {
+  background-color: #e9f2f7;
+  border:0px;
+}
+section#extracurricular ul::-webkit-scrollbar-thumb        { 
+  background-color: #81b7d1;
+}
+section#extracurricular ul::-webkit-scrollbar-corner       { 
+  background-color: transparent;
+}
+section#extracurricular ul::-webkit-resizer                { /* 7 */ }
+
+
+
+
+
+/* COMPLETED! */
+section#attendance_and_discipline {
+  color: #64656a;
+  width: 358px;
+  height: 240px;
+  font-size: 16px;
+  font-family: 'Amaranth', sans-serif; 
+  float:left;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+section#attendance_and_discipline > header h1 {
+  color: #9dc6da;
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  letter-spacing: 3px;
+}
+section#attendance_and_discipline > header hr {
+  margin: -1px;
+  margin-bottom: 1px;
+  height: 3px;
+  color: #908f94;
+  background-color: #908f94;
+}
+section#attendance_and_discipline > header p {
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-bottom: 6px;
+  text-align: justify;
+}
+section#attendance_and_discipline > article {
+  height: 102px;
+  width: 102px;
+  background: #9dc6da;
+  text-align: center;
+  float: left;
+  margin-right:20px;
+  padding: 2px;
+  margin-bottom: 6px;
+}
+section#attendance_and_discipline > article + article + article {
+  margin-right:0px;
+}
+section#attendance_and_discipline > article header {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 900;
+  margin: -12px;
+  letter-spacing: 2px;
+}
+section#attendance_and_discipline > article p {
+  margin: -2px;
+  color: #015f85;
+  font-size: 83px;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 700;
+}
+section#attendance_and_discipline > footer {
+  font-style: italic;
+  clear: both;
+  font-family: 'Amaranth', sans-serif;  
+  font-size: 13px;
+  text-align: justify;
+}
+section#attendance_and_discipline > footer a {
+  font-style: normal;
+  clear: both;
+  font-family: 'Amaranth', sans-serif;
+  text-decoration: none;  
+  color: #68696d;
+  font-weight: 900;
+}
+section#attendance_and_discipline > footer a:after {
+	content: url(link_arrow_dark.gif);
+	margin-left: 2px;
+	height: 10px;
+	width: 10px;
+}
+
