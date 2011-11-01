@@ -45,6 +45,12 @@ section#courses {
   width: 879px; 
 }
 
+section#grade_log {
+	position: relative;
+	clear: both;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
 section#grade_log rect.test {
 	fill: #fdc041;
 }
@@ -60,10 +66,7 @@ section#grade_log rect.participation {
 section#grade_log ol {
 	overflow: auto;
 	height: 300px;
-	width: 880px;
-}
-section#grade_log {
-	position: relative;
+	width: 845px;
 }
 section#grade_log article footer {
 	display:none;
@@ -73,8 +76,6 @@ section#grade_log .tooltip {
 	display: none;
 	height: 130px;
 	width: 150px;
-	float: left;
-	position: relative;
 }
 section#grade_log .tooltip article:before {
 	content: "";
@@ -103,6 +104,39 @@ section#grade_log .tooltip article > * {
 section#grade_log .tooltip article meter {
 	display: none;
 }
+section#grade_log > hr {
+  position: absolute;
+  bottom:0px;
+  width: 845px;
+  margin: 1px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  height: 3px;
+  color: #908f94;
+  background-color: #908f94;
+  border:0;
+}
+section#grade_log ol::-webkit-scrollbar              {
+  width: 11px;
+  height: 11px;
+}
+section#grade_log ol::-webkit-scrollbar-button       {
+  background-color: #e9f2f7;
+  border:0px;
+}
+section#grade_log ol::-webkit-scrollbar-track        { /* 3 */ }
+section#grade_log ol::-webkit-scrollbar-track-piece  {
+  background-color: #e9f2f7;
+  border:0px;
+}
+section#grade_log ol::-webkit-scrollbar-thumb        { 
+  background-color: #81b7d1;
+}
+section#grade_log ol::-webkit-scrollbar-corner       { 
+  background-color: transparent;
+}
+section#grade_log ol::-webkit-resizer                { /* 7 */ }
+
 
 
 section#upcoming_milestones {
@@ -115,6 +149,7 @@ section#upcoming_milestones {
   margin-left: 15px;
   padding: 10px;
   padding-top: 6px;
+  clear: left;
 }
 section#upcoming_milestones > header h1 {
   color: #218aaa;

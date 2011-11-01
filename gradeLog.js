@@ -7,7 +7,7 @@ $(function(){
 	var showAndMoveTooltip = function(x,y, article) {
 		var $tooltip = $("#grade_log .tooltip");
 		$tooltip.show();
-		$tooltip.css({left: (x + width + 20 - 4) + "px", bottom: (y + 100 - 3) + "px"});
+		$tooltip.css({left: (x + width + 20 - 4) + "px", bottom: (y - 40) + "px"});
 		$tooltip.html("<article>" + $(article).html() + "</article>");
 	};
 	var $gradeLogSvg = $("#grade_log_svg").svg({settings: {'width':880, 'height':height}, onLoad: function(svg) {
