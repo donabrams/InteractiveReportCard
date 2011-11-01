@@ -1,3 +1,12 @@
 This is an implementation of a contest winning interactive report card design by Polly Avignon (http://www.pollyd.com/).
 
 See and read about it here: http://www.good.is/post/winner-redesign-the-report-card-project/
+
+TODO:
+ - Missing sections.
+ - Find better openly available fonts.
+ - Find a better shadow implementation for triangles (ribbon and grade log tooltip)
+ - Let HTML5 working group know they need a way to turn off the meter/progress wrapping. No css override to eliminate it!
+ - Redo all the images used so far as svgs. Should take all of 5 minutes (and then I can color them correctly with CSS!).
+ - Redo css so either everything scales horizontally or dependencies are noted. I think milestones and grade log are the 
+  only scalable sections at the moment.
