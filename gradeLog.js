@@ -1,7 +1,7 @@
 $(function(){
   var width = 10;
 	var space = 4;
-	var height = 300;
+	var height = 250;
 	var spaceBetweenDates = 20;
 	var articles = $("#grade_log article");
 	var showAndMoveTooltip = function(x,y, article) {
