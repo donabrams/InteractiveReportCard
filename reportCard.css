@@ -2,6 +2,15 @@
   clear: both;
   height: 0px;
 }
+a {
+	cursor: hand;
+}
+a:before {
+	cursor: hand;
+}
+a:after {
+	cursor: hand;
+}
 body {
   background-color: #fdfcde; /* tan for background */
 }
@@ -44,8 +53,6 @@ section#courses {
   margin-right: 60px;
   width: 879px; 
 }
-
-
 section#courses > hr {
   height: 2px;
   color: #CCC;
@@ -55,11 +62,131 @@ section#courses > hr {
   margin-right: 15px;
 }
 
+rect.test, path.test {
+	fill: #fdc041;
+	color: #fdc041;
+	background-color:#fdc041;
+}
+rect.project, path.project {
+	fill: #2590b0;
+	color: #2590b0;
+	background-color:#2590b0;
+}
+rect.homework, path.homework {
+	fill: #9dc6da;
+	color: #9dc6da;
+	background-color:#9dc6da;
+}
+rect.participation, path.participation {
+	fill: #015f85;
+	color: #015f85;
+	background-color:#015f85;
+}
+
+
+section#grading_criteria {
+	height:270px;
+	float:right;
+	position:relative;
+}
+section#grading_criteria header:after {
+	clear:both;
+	content:".";
+  display:block;
+  height:0;
+  visibility:hidden;
+}
+section#grading_criteria header h1 {
+	color: #9dc6da;
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  letter-spacing: 3px;
+	margin-left: 15px;
+}
+section#grading_criteria .legend {
+	width:140px;
+	margin-left:15px;
+	margin-top: 16px;
+}
+section#grading_criteria .legend hr {
+	color: #6d6e72;
+	background-color: #6d6e72;
+	height: 3px;
+	border: 0;
+	margin-bottom: 3px;
+}
+section#grading_criteria .legend li:after {
+	content: "";
+	display: block;
+	width: 100%;
+	margin-top:6px;
+	border-width: 1px;
+	border-style: solid;
+  border-color: transparent transparent #CCC transparent;
+}
+section#grading_criteria .legend li > * {
+	margin-left: 20px;
+}
+section#grading_criteria .legend li h2:before {
+  content:'';
+	height: 12px;
+  width: 12px;
+  text-align: left;
+  display: table-cell; 
+  vertical-align: top;
+  margin-right: -10px;
+  float:left;
+	margin-top: 0px;
+	margin-left: -20px;
+}
+section#grading_criteria .legend li.tests h2:before {
+	background-color:#fdc041;
+}
+section#grading_criteria .legend li.homework h2:before {
+	background-color:#9dc6da;
+}	
+section#grading_criteria .legend li.projects h2:before {
+	background-color:#2590b0;
+}
+section#grading_criteria .legend li.participation h2:before {
+	background-color:#015f85;
+}
+section#grading_criteria .legend li h2 {
+  color: #777;
+  font-weight: 100;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 16px;
+	line-height: 12px;
+	font-weight: 100;
+	margin-top: 4px;
+}
+section#grading_criteria .legend li meter {
+	display:none;
+}
+section#grading_criteria .legend li p {
+	color: #999;
+	font-size: 18px;
+  font-family: 'Amaranth', sans-serif;
+	font-weight: 600;
+}
+section#grading_criteria aside {
+	display: none;
+}
+section#grading_criteria .pie {
+	position: absolute; 
+	right: 0;
+	bottom: 0;
+}
+
+
 section#grade_log {
 	position: relative;
 	clear: both;
 	margin-bottom: 20px;
 	margin-left: 15px;
+	height: 305px;
 }
 section#grade_log header h1 {
   color: #015f85;
@@ -189,18 +316,6 @@ section#grade_log > hr {
   color: #908f94;
   background-color: #908f94;
   border:0;
-}
-section#grade_log rect.test {
-	fill: #fdc041;
-}
-section#grade_log rect.project {
-	fill: #2590b0;
-}
-section#grade_log rect.homework {
-	fill: #9dc6da;
-}
-section#grade_log rect.participation {
-	fill: #015f85;
 }
 section#grade_log ol::-webkit-scrollbar              {
   width: 11px;

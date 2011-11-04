@@ -10,6 +10,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   <script src="jquery.svg.js"></script>
+  <script src="gradingCriteria.js"></script>
   <script src="gradeLog.js"></script>
 </head>
 <body>
@@ -124,24 +125,31 @@ TODO:
     <header>
       <h1>Grading Criteria</h1>
     </header>
-    <ul>
-      <li>
-        <h2>Tests & Quizzes</h2>
-        <meter min="0" max="100" value="40">40%</meter>
-      </li>
-      <li>
-        <h2>Homework</h2>
-        <meter min="0" max="100" value="30">30%</meter>
-      </li>
-      <li>
-        <h2>Research Project</h2>
-        <meter min="0" max="100" value="20">20%</meter>
-      </li>
-      <li>
-        <h2>Class Participation</h2>
-        <meter min="0" max="100" value="10">10%</meter>
-      </li>
-    </ul>
+		<section class="legend">
+			<hr>
+	    <ul>
+	      <li class="tests">
+	        <h2>Tests & Quizzes</h2>
+	        <meter min="0" max="100" value="25">40%</meter>
+					<p>40%</p>
+	      </li>
+	      <li class="homework">
+	        <h2>Homework</h2>
+	        <meter min="0" max="100" value="25">30%</meter>
+					<p>30%</p>
+	      </li>
+	      <li class="projects">
+	        <h2>Research Project</h2>
+	        <meter min="0" max="100" value="25">20%</meter>
+					<p>20%</p>
+	      </li>
+	      <li class="participation">
+	        <h2>Class Participation</h2>
+	        <meter min="0" max="100" value="25">10%</meter>
+					<p>10%</p>
+	      </li>
+	    </ul>
+		</section>
     <aside>
       <p>Grades may be curved at teacher's discretion</p>
     </aside>
