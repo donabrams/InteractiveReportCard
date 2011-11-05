@@ -173,6 +173,16 @@ section#grading_criteria .legend li p {
 }
 section#grading_criteria aside {
 	display: none;
+  color: #999a9f;
+	font-weight: 100;
+  font-style: italic;
+  font-family: 'Amaranth', sans-serif;  
+  font-size: 12px;
+  text-decoration: none;
+	text-align: center;
+}
+section#grading_criteria aside p {
+	margin: 3px;
 }
 section#grading_criteria .pie {
 	position: absolute; 
