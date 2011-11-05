@@ -141,13 +141,13 @@ section#grading_criteria .legend li h2:before {
 	margin-top: 0px;
 	margin-left: -20px;
 }
-section#grading_criteria .legend li.tests h2:before {
+section#grading_criteria .legend li.test h2:before {
 	background-color:#fdc041;
 }
 section#grading_criteria .legend li.homework h2:before {
 	background-color:#9dc6da;
 }	
-section#grading_criteria .legend li.projects h2:before {
+section#grading_criteria .legend li.project h2:before {
 	background-color:#2590b0;
 }
 section#grading_criteria .legend li.participation h2:before {
