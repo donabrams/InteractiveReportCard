@@ -32,7 +32,7 @@ $(function(){
 							var repeatAngle = 2 * Math.PI /repetitions;
 							for (var i = 0; i < repetitions;i++) {
 								var c = translateToOrigin({x:br * Math.cos(repeatAngle*i), y: br * Math.sin(repeatAngle*i)});
-								svg.ellipse(g, c.x, c.y, 1, 1, {fill:'#999'});
+								svg.ellipse(g, c.x, c.y, 1, 1, {'class':'graphBorder'});
 							}
 							// pie chart slices
 							var percentTotal = 0.0;
