@@ -15,28 +15,120 @@ body {
   background-color: #fdfcde; /* tan for background */
 }
 body > header {
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 879px;
+	text-align: right;
+	padding-top: 40px;
+}
+	
+body > header section#reportIdentifier {
   background-color: #fff; /* white used for banner and class */
+	width: 350px;
+	height: 300px;
+	position:absolute;
+	left: 75px;
+	top: -50px;
+	text-align: center;
+	box-shadow: 6px 6px 8px #A4A4A4;
+	z-index: 2;
 }
-body > header h1 {
+body > header section#reportIdentifier h1 {
   color: #015f85; /* dark blue used for name, icons, headers and primary links */
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 3px;
+	margin-top:140px;
 }
-body > header h2 {
+body > header section#reportIdentifier h2 {
   color: #50a4c0; /* middling blue used for school name */
+	font-style: italic;
+	font-size: 16px;
+	font-family: 'Amaranth', sans-serif;
+	font-weight: 100;
+	margin-top: 30px;
+	padding-top: 8px;
+	border-top: 1px solid black;
+	width: 265px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
-body > header h3 {
+
+body > header section#reportIdentifier h3 {
   color: #f9bc2d; /* golden yellow for grade */
+	margin-top: 3px;
+	font-size: 16px;
+	font-family: 'Amaranth', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
 }
-body > time {
+body > header > time {
   color: #f9bc2d; /* golden yellow for date */
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+section#mentions {
+	margin-left: 385px;
+	text-align: left;
+  color: #99c2d8; /* blue used for mentions */
+	margin-top: 20px;
+}
+section#mentions * {
+	display:inline;
+}
+section#mentions header h2 {
+	text-transform: uppercase;
+	font-family: 'Dorsa', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+section#mentions > p,
+section#mentions footer {
+	font-style: italic;
+	font-size: 11px;
+	font-family: 'Amaranth', sans-serif;
+	font-weight: 100;
+}
+section#mentions footer:before {
+	content: " -- ";
+}
+body > header > nav {
+	width: 100%;
+	border-top: 1px solid black;
+	margin-top: 15px;
+	text-align: left;
+}
+body > header > nav ol {
+	margin-left: 385px;
+}
+body > header > nav li {
+	display: inline;
+  color: #99c2d8;
+	font-style: italic;
+	font-size: 11px;
+	font-family: 'Amaranth', sans-serif;
+	font-weight: 100;
+	border-right: 1px solid #99c2d8;
+	padding-right: 7px;
+}
+body > header > nav ol li:last-child {
+	border-right: 0;
+}
+body > header > h3 {
+	margin-top: -1em;
 }
 section#description {
   background-color: #9dc6da; /* light blue used for description background */
 }
 section#class_info > p {
   color: #939499; /* light gray used for section */
-}
-section#mentions > p {
-  color: #99c2d8; /* blue used for mentions */
 }
 /* middling blue for graph and dialog banner #288fb0 */
 /* gray for secondary links #999a9e */
