@@ -825,12 +825,12 @@ section#parent_teacher_dialog h1 {
 section#parent_teacher_dialog h1:before {
   content: "";
   position: absolute;
-  left: -5px;
-  top:-4px;
+  left: -9px;
+  top:-8px;
   display: block;
   border-style: solid;
   border-color: transparent transparent transparent #fff;
-  border-width: 20px 20px 20px 20px;
+  border-width: 24px 24px 24px 24px;
 }
 section#parent_teacher_dialog ol {
   position: absolute;
