@@ -4,7 +4,7 @@ $(function(){
 		var graphRadius = 105.0;
 		var innerRadius = 50.0;
 		var margin = 30.0;
-		var offset = 2.0;
+		var offset = 1.7;
 		var theta0 = Math.PI/5.0;
 		
 		var $legend = $("#grading_criteria .legend");
