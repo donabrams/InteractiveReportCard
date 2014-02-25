@@ -72,9 +72,10 @@ body > header section#reportIdentifier h3 {
 }
 body > header section#reportIdentifier .bannerBottom {
 	width:370px;
-	height:60 px;
+	height:60px;
 	position: absolute;
 	top: 260px;
+	left: 0;
 	z-index: -1;
 }
 body > header section#reportIdentifier .bannerBottom polygon {
